@@ -1,0 +1,284 @@
+html{
+    scroll-behavior: smooth;
+    animation: fadeInAnimation ease 2s;
+}
+
+body{
+    height: auto;
+    width: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.titre h1:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+.navbar{
+    position: relative;
+    bottom: 310px;
+}
+
+nav{
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    list-style-type: none;
+}
+
+a{
+    position: relative;
+    text-decoration:none;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    padding: 0 10px;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #bbbbbb;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #bbbbbb;
+    transition: 0.4s;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+
+.titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.titre h1{
+    color: white;
+    font-size: 80px;
+    transition: 0.5s;
+}
+
+img{
+    position: relative;
+    width: 500px;
+    height: auto;
+    left: 830px;
+    top: 150px;
+    box-shadow: -40px 40px 90px;
+}
+
+.line{
+    position: absolute;
+    top: calc(100vh - 80px);
+    left: calc(50% - 12px);
+    width: 0;
+    height: 30px;
+    border: 3px solid transparent;
+    animation: animate 1.5s infinite;
+}
+
+.line::after{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 15px;
+    height: 16px;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotateZ(45deg);
+}
+@keyframes animate{
+    0%{margin-top: 0;}
+    50%{margin-top: 20px;}
+    100%{margin-top: 0;}
+}
+
+.container{
+    width: 1vh;
+    height: 1vh;
+}
+
+.bandecol{
+    position: relative;
+    width: 200px;
+    height: 3000px;
+    background-color: #596b74;
+    left: 300px;
+    bottom: 687px;
+    z-index: 3;
+   
+}
+
+.bpres{
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: #85a8ae;
+    bottom: 3450px;
+    left: 180px;
+    box-shadow: 40px 40px 90px;
+    z-index: 5;
+
+}
+
+.tpres{
+    margin-left: 70px;
+    font-size: 80px;
+    font-weight: 600;
+    
+}
+
+.ppres{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.titrepar{
+    position: relative;
+    bottom: 4780px;
+    font-size: 100px;
+    font-weight: 600;
+    rotate: 270deg;
+    z-index: 5;
+    left: 380px;
+}
+
+.parcourspara{
+    position: relative;
+    font-size: 22px;
+    z-index: 7;
+    left: 70px;
+}
+
+.tprqRT{
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 50px;
+}
+
+.pprqRT{
+    font-size: 22px;
+    margin-left: 50px;
+}
+
+.titrecon{
+    position: relative;
+    font-size: 120px;
+    font-weight: 600;
+    z-index: 6;
+    bottom: 4100px;
+    left: 570px;
+}
+
+.bpar{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background-color: #947c84;
+    bottom: 3000px;
+    left: 250px;
+    z-index: 5;
+    box-shadow: 40px 40px 90px;
+}
+
+.ppar{
+    position: relative;
+    width: 700px;
+    height: 500px;
+    background-color: #c5b3b1;
+    bottom: 3600px;
+    left: 600px;
+    z-index: 6;
+    box-shadow: -40px 40px 90px;
+}
+
+.bprqRT{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background-color: #9f6e7d;
+    bottom: 4300px;
+    left: 800px;
+    z-index: 5;
+    box-shadow: -40px 40px 90px;
+
+}
+
+.bcon{
+    position: relative;
+    width: 1000px;
+    height: 250px;
+    background-color: #829ba4;
+    bottom: 2900px;
+    left: 100px;
+    z-index: 6;
+    box-shadow: 40px 40px 90px;
+}
+
+.pcon{
+    position: relative;
+    width: 700px;
+    height: 400px;
+    background-color: #929da5;
+    bottom: 3000px;
+    left: 600px;
+    box-shadow: -40px 40px 90px;
+
+}
+
+.pcontact{
+    margin-left: 70px;
+    font-size: 25px;
+    font-weight: 600;
+}
